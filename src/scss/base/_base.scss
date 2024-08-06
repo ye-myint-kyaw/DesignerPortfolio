@@ -1,6 +1,6 @@
 //文字コードはutf-8
 @charset "UTF-8";
-@use "../global/" as g;
+@use "../abstracts/" as g;
 
 *{
   box-sizing: border-box;
@@ -8,6 +8,7 @@
 
 html{
   font-size: 62.5%;
+  background-color: rebeccapurple;
 }
 
 body {
