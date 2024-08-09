@@ -1,0 +1,18 @@
+//文字コードはutf-8
+@charset "UTF-8";
+@use "../abstracts/" as g;
+
+
+.top{
+  height: 100dvh;
+  overflow: hidden;
+  &Kv{
+    padding: 60px g.$base_content_padding;
+    width: 100%;
+    height: 100dvh;
+    &__up, &__under{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

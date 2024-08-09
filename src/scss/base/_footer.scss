@@ -1,0 +1,27 @@
+//文字コードはutf-8
+@charset "UTF-8";
+@use "../abstracts/" as g;
+
+.footer{
+  background-color: var(--white);
+  &__inner{
+    max-width:g.$base_content_width;
+    margin: 0 auto;
+    padding: 22px g.$base_content_padding;
+    @include g.media_queries{
+      padding: 22px 25px;
+    }
+  }
+  &__list{
+    display: flex;
+    justify-content: space-between;
+
+    &__item{
+      a{
+        @include g.fontsize(32);
+        color: var(--black);
+        @include g.primaryFont;
+      }
+    }
+  }
+}

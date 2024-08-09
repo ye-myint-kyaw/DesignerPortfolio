@@ -7,14 +7,19 @@
 }
 
 html{
-  font-size: 62.5%;
-  background-color: rebeccapurple;
+  font-size: 62.5%!important;
 }
 
 body {
-  font-family: g.$fontface_default;
   font-weight: 500;
   line-height: 1.6;
   font-size: 12px;
+  color: var(--white);
+  background-color: var(--black);
+  @include g.primaryFont;
+}
+
+a{
+  text-decoration: none;
   color: var(--black);
 }

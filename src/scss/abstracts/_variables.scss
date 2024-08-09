@@ -2,21 +2,17 @@
 
 //カラー
 :root {
-  --black: #333;
+  --black: #121212;
   --white:#fff;
 }
 
 //length values
-$base_content_width: 1440px;
-$base_content_padding: 11.8%;
+$base_content_width: 1728px;
+$base_content_padding: min(7%, 60px);
 
 // breakpoints
 $bp_pc_min: 769px;
 $bp_tablet_max: 1000px;
 $bp_pc_max: 1400px;
 $bp_tablet_min: 768px;
-$bp_smartphone_max: 768px;
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Sans+JP:wght@400;700;900&display=swap');
-$fontface_default: 'Noto Sans JP', sans-serif;
-$fontface_en: 'Noto Sans JP', sans-serif;
+$bp_smartphone_max: 768px;  

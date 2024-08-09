@@ -24,3 +24,9 @@ $breakpoints: (
   font-size: $size + px;
   font-size: math.div($size, 10) + rem;
 }
+
+@mixin primaryFont(){
+  font-family: "HKGroteskWide-Regular"!important;
+}
+
+

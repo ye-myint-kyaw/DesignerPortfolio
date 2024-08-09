@@ -1,0 +1,87 @@
+//文字コードはutf-8
+@charset "UTF-8";
+@use "../abstracts/" as g;
+
+.header{
+  @include g.fontsize(30);
+  height: 100%;
+  display: block;
+  position: relative;
+  &.dark{
+    a, button{  
+      color: var(--white);
+    }
+    .header__humburger{
+      span{
+        background-color: var(--white);
+      }
+    }
+  }
+  &.light{
+    a,button{
+      color: var(--black);
+    }
+  }
+  &__humburger{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    span{
+      width: 50px;
+      height: 6px;
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      &:nth-child(1){
+        top: 0;
+      }
+      &:nth-child(2){
+        top: 16px
+      }
+    }
+  }
+  &__about{
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  &__contact{
+    position: absolute;
+    left: 0;
+    bottom: 0
+  }
+  &__next{
+    @include g.fontsize(30);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    @include g.primaryFont;
+    text-align: right;
+    overflow: hidden;
+    span{
+      display: inline-block;
+    }
+    &::after{
+      content: "";
+      display: inline-block;
+      width: 25px;
+      height: auto;
+      aspect-ratio: 1/1;
+      background-image: url("/img/icon/img_arrows.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin-left: 16px;
+      animation: arrowDown 1s ease infinite alternate;
+    }
+  }
+}
+
+@keyframes arrowDown {
+  0%{
+    transform: translateY(-10%);
+  }
+  100%{
+    transform: translateY(20%);
+  }
+}
