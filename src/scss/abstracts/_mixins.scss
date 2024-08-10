@@ -29,4 +29,8 @@ $breakpoints: (
   font-family: "HKGroteskWide-Regular"!important;
 }
 
+@mixin secondaryFont(){
+  font-family: "NeueMetanaNext-SemiBold"!important;
+}
+
 

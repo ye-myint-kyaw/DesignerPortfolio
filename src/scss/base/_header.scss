@@ -7,6 +7,7 @@
   height: 100%;
   display: block;
   position: relative;
+  z-index: 1000;
   &.dark{
     a, button{  
       color: var(--white);
@@ -16,10 +17,25 @@
         background-color: var(--white);
       }
     }
+    .header__next{
+      &::after{
+        background-image: url("/img/icon/img_arrows.svg");
+      }
+    }
   }
   &.light{
     a,button{
       color: var(--black);
+    }
+    .header__humburger{
+      span{
+        background-color: var(--black);
+      }
+    }
+    .header__next{
+      &::after{
+        background-image: url("/img/icon/img_arrows_black.svg")!important;
+      }
     }
   }
   &__humburger{
@@ -27,6 +43,8 @@
     left: 0;
     top: 0;
     width: 50px;
+    height: 28px;
+    cursor: pointer;
     span{
       width: 50px;
       height: 6px;
@@ -68,7 +86,6 @@
       width: 25px;
       height: auto;
       aspect-ratio: 1/1;
-      background-image: url("/img/icon/img_arrows.svg");
       background-repeat: no-repeat;
       background-size: contain;
       margin-left: 16px;

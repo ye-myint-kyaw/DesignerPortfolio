@@ -1,7 +1,15 @@
 @font-face {
 	font-family: 'HKGroteskWide-Regular';
 	font-style: normal;
-	font-weight: 500;
-	src: url('/font/HKGroteskWide-Regular.otf') format('opentype');
+	font-weight: 400;
+	src: url('/font/HKGroteskWide-Light.otf') format('opentype');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'NeueMetanaNext-SemiBold';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/font/NeueMetana-Regular.otf') format('opentype');
 	font-display: swap;
 }
