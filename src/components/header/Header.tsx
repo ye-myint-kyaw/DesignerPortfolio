@@ -1,13 +1,22 @@
-import Link from "next/link";
+import React from 'react'
+import BasicLayout from '../Layout/BasicLayout'
+import Link from 'next/link'
+import MobileNavigation from './MobileNavigation'
+import NavLinks from './NavLinks'
 
-export default function Header({theme = "dark"}:{theme?:"dark"|"light"}){
-  return <header className={`header ${theme}`}>
-    <button className="header__humburger">
-      <span></span>
-      <span></span>
-    </button> 
-    <Link href={"/about"} className="header__about">About me</Link>
-    <Link href={"/about"} className="header__contact">Contact<br/>here</Link>
-    <button className="header__next"><span>Get to<br/>Know Me</span></button>
-  </header>
+
+const Header = () => {
+  return (
+    <BasicLayout asChild>
+      <header className='py-5 flex justify-between items-center fixed top-0 left-0 right-0 w-full z-50 bg-secondary'>
+        <h1 className='heading01 uppercase'>Phone Lynn Thant</h1>
+        <nav className='flex'>
+          <NavLinks/>
+        </nav>
+        <MobileNavigation/>
+      </header>
+    </BasicLayout>
+  )
 }
+
+export default Header

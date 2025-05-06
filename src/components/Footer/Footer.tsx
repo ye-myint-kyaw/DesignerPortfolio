@@ -1,20 +1,20 @@
-export default function Footer(){
-  return <footer className="footer">
-    <div className="footer__inner">
-      <ul className="footer__list">
-        <li className="footer__list__item">
-          <a href="https://www.behance.net/phonelinnthant" className="link" target="_blank">Behance</a>
-        </li>
-        <li className="footer__list__item">
-          <a href="DUMMY" className="link">Instagram</a>
-        </li>
-        <li className="footer__list__item">
-          <a href="DUMMY" className="link">Email</a>
-        </li>
-        <li className="footer__list__item">
-          <a href="DUMMY" className="link">Linkedin</a>
-        </li>
-      </ul>
-    </div>
-  </footer>
-}
+import BasicLayout from "../Layout/BasicLayout";
+
+const Footer = () => {
+  return (
+    <footer className="pb-12">
+      <div>
+        
+      </div>
+      <BasicLayout asChild >
+        <div className="fixed bottom-0 left-0 right-0 w-full py-4 flex justify-between gap-5">
+          <p className="heading01">YOUR EXTRAORDINARY DESINGER WHO CAN FEEL YOUR BRAND’S EMOTIONS.</p>
+          {/* scroll indigator */}
+          <div></div>
+        </div>
+      </BasicLayout>
+    </footer>
+  );
+};
+
+export default Footer;

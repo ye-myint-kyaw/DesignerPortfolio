@@ -1,3 +1,3 @@
 export default function contact(){
-    return <main>Contact</main>
+    return <main className="text-primary">Contact</main>
 }
