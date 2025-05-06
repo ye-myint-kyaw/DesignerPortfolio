@@ -17,6 +17,40 @@
   .heading01{
     @apply font-bold;
   }
+  .heading02{
+    @apply text-[24px] font-bold;
+  }
+}
+
+@layer theme{
+  .topPoster{
+    /* &:nth-child(2){
+      img{
+        transform: translateX(-100%);
+      }
+    }
+    &:nth-child(3){
+      img{
+        transform: translateX(-200%);
+      }
+    }
+    &:nth-child(4){
+      img{
+        transform: translateX(-300%);
+      }
+    } */
+    img{
+      animation: slideLeft 9s steps(3) infinite forwards;
+    } 
+  }
+  @keyframes slideLeft {
+    from{
+      transform: translateX(0%);
+    }
+    to{
+      transform: translateX(-300%);
+    }
+  }
 }
 
 @theme inline {
