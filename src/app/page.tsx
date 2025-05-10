@@ -1,6 +1,10 @@
 import BasicLayout from "@/components/Layout/BasicLayout";
+import Categories from "@/components/Pages/Top/Categories";
 import Category from "@/components/Pages/Top/CategorySection";
+import Contact from "@/components/Pages/Top/Contact";
 import Kv from "@/components/Pages/Top/Kv";
+import Poster from "@/components/Pages/Top/Poster";
+import Testimonial from "@/components/Pages/Top/Testimonial";
 import Table from "@/components/Table";
 import TextGroup from "@/components/TextGroup";
 import { TopCategories, TopIntroTable, TopPosters } from "@/constants";
@@ -12,15 +16,7 @@ const page = () => {
     <div className="top">
       <Kv />
 
-      {TopCategories.map((category, index) => <Category
-        img01={category.img01}
-        img02={category.img02}
-        title={category.title}
-        description={category.description}
-        slug={category.slug}
-        key={category.slug}
-        isReversed={(index + 1) % 2 === 0}
-      />)}
+      <Categories/>
 
       <TextGroup
         context={`Good design is obvious.
@@ -29,38 +25,15 @@ const page = () => {
         className="min-h-screen"
       />
 
-      <BasicLayout isGrid className=" mb-[80px] lg:mb-[200px]">
-        {TopPosters.map((_, index) => {
-          // Rotate array
-          const rotatedPosters = [
-            ...TopPosters.slice(index),
-            ...TopPosters.slice(0, index)
-          ]
-
-          return (
-            <figure
-              key={index}
-              className={`${(index + 1) % 2 === 0 ? 'translate-y-0 md:translate-y-[52px]' : ''} flex col-span-2 overflow-hidden topPoster`}
-            >
-              {rotatedPosters.map((poster) => (
-                <Image
-                  key={poster}
-                  width={296}
-                  height={404}
-                  alt="Poster"
-                  src={poster}
-                  className="rounded-[15px] min-w-full"
-                />
-              ))}
-            </figure>
-          )
-        })}
-
-      </BasicLayout>
+      <Poster/>
 
       <Table subTitle="HELLO AGAIN I’M" title="Phone Lynn Thant (Leo)" tableCells={TopIntroTable}/>
 
-      <div style={{ height: 5000 }}></div>
+      <Testimonial/>
+
+      <Contact/>
+
+      {/* <div style={{ height: 5000 }}></div> */}
     </div>
   );
 };

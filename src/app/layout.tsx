@@ -20,15 +20,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} bg-secondary text-primary`}>
-        <Header/>
+        
         <Smoothscroll>
           <div id="smooth-wrapper">
             <div id="smooth-content">
+              <Header/>
               {children}
+              <Footer/>
             </div>
           </div>
         </Smoothscroll>
-        <Footer/>
+
       </body>
     </html>
   );

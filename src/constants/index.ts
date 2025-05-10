@@ -87,3 +87,40 @@ export const TopIntroTable: TableRow[] = [
     ]
   },
 ]
+
+export const TestimonialList = [
+  {
+    id: 1,
+    content: `I love his presentations.
+It is super fun and enjoy to watch.
+Also the work is very smooth and
+professional 👏`,
+    author: "PAST CLIENT"
+  },
+  {
+    id: 2,
+    content: `I love his personality. Precise,
+  friendly, funny, smart and adaptable.
+  It is like just look into his eyes and
+  he will give you tons of solutions with
+  playful presentation in an hour 😄`,
+    author: "PAST PARTNER"
+  },
+  {
+    id: 3,
+    content: `My working desk is beside him
+  but I don’t even sense him exist.
+  Yes he is that quiet.
+  But if you need something
+  he is there to point it out loud 😮‍💨`,
+    author: "PAST PARTNER"
+  },
+  {
+    id: 4,
+    content: `Let’s work together again, Leo.
+  He is very reliable and fills the gap
+  for the brand b4 we don’t even figure
+  out what it is 💪`,
+    author: "PAST PARTNER"
+  },
+]
