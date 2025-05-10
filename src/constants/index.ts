@@ -1,3 +1,5 @@
+import { TableRow } from "@/types/global";
+
 export const sidebarLinks: Record<string, string>[] = [
   {
     route: "/",
@@ -49,4 +51,39 @@ export const TopPosters = [
   "/img/img_poster02.webp",
   "/img/img_poster03.webp",
   "/img/img_poster04.webp"
+]
+
+
+export const TopIntroTable: TableRow[] = [
+  {
+    title: "OVERVIEW",
+    content: [`Hi, I am the one who believe that great design is more than just aesthetics- It’s about creating solid experience of a person or brand behind the design. With a strong background in visual design, branding and user experience, I craft designs which are both stunning on the look and in the function. Whether It’s designing logo, social ads, poster, t-shirt or digital interface, I bring creativity and strategy together to give feeling and lasting impact. I’m always exploring new trends and technologies to think 
+      outside the boundaries and help brands tell their stories effectively.`],
+  },
+  {
+    title: "SERVICES",
+    content: [`UX/UI Design
+      Graphic Design
+      Print Design`,
+      `Web Design
+      Brand Identity
+      Tshirt Design`,
+      `App Design
+      Social ads Design
+      Poster Design`
+    ]
+  },
+  {
+    title: "KNOWLEDGE",
+    content: [`Photoshop
+      Illustrator
+      Indesign`,
+      `Figma
+      Webflow
+      XD`,
+      `Blender
+      Spline
+      Inkscape`
+    ]
+  },
 ]

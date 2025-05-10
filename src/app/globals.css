@@ -9,8 +9,18 @@
   --color-secondary: #F5F5F5;
   --color-green: #68E216;
   --color-blue: #0988E9;
+  --color-gray: #A2A2A2;
 
   --max-width: 1512px;
+  --animate-footer: footerScrollIndicator 2s ease-in-out infinite alternate;
+  @keyframes footerScrollIndicator {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(16px);
+    }
+  }
 }
 
 @layer utilities{
@@ -18,27 +28,12 @@
     @apply font-bold;
   }
   .heading02{
-    @apply text-[24px] font-bold;
+    @apply text-[24px] font-bold uppercase;
   }
 }
 
 @layer theme{
   .topPoster{
-    /* &:nth-child(2){
-      img{
-        transform: translateX(-100%);
-      }
-    }
-    &:nth-child(3){
-      img{
-        transform: translateX(-200%);
-      }
-    }
-    &:nth-child(4){
-      img{
-        transform: translateX(-300%);
-      }
-    } */
     img{
       animation: slideLeft 9s steps(3) infinite forwards;
     } 

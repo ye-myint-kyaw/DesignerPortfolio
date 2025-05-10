@@ -1,8 +1,9 @@
 import BasicLayout from "@/components/Layout/BasicLayout";
 import Category from "@/components/Pages/Top/CategorySection";
 import Kv from "@/components/Pages/Top/Kv";
+import Table from "@/components/Table";
 import TextGroup from "@/components/TextGroup";
-import { TopCategories, TopPosters } from "@/constants";
+import { TopCategories, TopIntroTable, TopPosters } from "@/constants";
 import Image from "next/image";
 import React from "react";
 
@@ -28,7 +29,7 @@ const page = () => {
         className="min-h-screen"
       />
 
-      <BasicLayout isGrid>
+      <BasicLayout isGrid className=" mb-[80px] lg:mb-[200px]">
         {TopPosters.map((_, index) => {
           // Rotate array
           const rotatedPosters = [
@@ -56,7 +57,10 @@ const page = () => {
         })}
 
       </BasicLayout>
-      <div style={{ height: 10000 }}></div>
+
+      <Table subTitle="HELLO AGAIN I’M" title="Phone Lynn Thant (Leo)" tableCells={TopIntroTable}/>
+
+      <div style={{ height: 5000 }}></div>
     </div>
   );
 };
