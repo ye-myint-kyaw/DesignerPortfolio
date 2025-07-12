@@ -28,6 +28,7 @@
   .heading01{
     @apply font-bold;
   }
+
   .heading02{
     @apply text-[24px] font-bold uppercase;
   }
@@ -37,24 +38,12 @@
   }
 
   .inputLabel{
-    @apply text-[14px] font-semibold uppercase ml-[24px] text-darkGray;
+    @apply text-[14px] font-semibold uppercase md:ml-[24px] text-darkGray;
   }
 }
 
 @layer theme{
-  .topPoster{
-    img{
-      animation: slideLeft 9s steps(3) infinite forwards;
-    } 
-  }
-  @keyframes slideLeft {
-    from{
-      transform: translateX(0%);
-    }
-    to{
-      transform: translateX(-300%);
-    }
-  }
+
 }
 
 @theme inline {

@@ -2,16 +2,13 @@
 
 import {
   Sheet,
-  SheetClose,
   SheetContent,
-  SheetDescription,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
-import Link from "next/link"
-import NavLinks from "./NavLinks"
 import Image from "next/image"
+import NavLinks from "@/components/header/NavLinks"
 const MobileNavigation = () => {
   return (
     <Sheet>

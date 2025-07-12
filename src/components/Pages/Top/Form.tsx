@@ -20,6 +20,9 @@ const formSchema = z.object({
   companyName: z.string().min(1, {
     message: "Company name is required.",
   }),
+  companyEmail: z.string().email().min(1, {
+    message: "Email is required.",
+  }),
   projectIdea: z.string().min(1, {
     message: "Project idea is required.",
   }),
@@ -34,6 +37,7 @@ const ContactForm = () => {
     resolver: zodResolver(formSchema),
     defaultValues: {
       companyName: "",
+      companyEmail: "",
       projectIdea: "",
       pricingRange: "",
       projectDetail: "",
@@ -63,7 +67,7 @@ const ContactForm = () => {
         />
         <FormField
           control={form.control}
-          name="email"
+          name="companyEmail"
           render={({ field }) => (
             <FormItem>
               <FormLabel className='inputLabel'>PROJECT IDEA</FormLabel>

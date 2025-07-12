@@ -22,7 +22,7 @@ const page = () => {
         context={`Good design is obvious.
         Great deign is transparent.`}
         author="Joe Sparano"
-        className="min-h-screen"
+        className="my-[120px] min-h-[40vh] md:my-0 md:min-h-screen"
       />
 
       <Poster/>
@@ -32,8 +32,6 @@ const page = () => {
       <Testimonial/>
 
       <Contact/>
-
-      {/* <div style={{ height: 5000 }}></div> */}
     </div>
   );
 };

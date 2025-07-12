@@ -6,7 +6,7 @@ import { ScrollSmoother } from 'gsap/ScrollSmoother';
 import gsap from 'gsap';
 
 
-const Smoothscroll = ({children}) => {
+const Smoothscroll = ({children}:{children: React.ReactNode}) => {
   useGSAP(()=>{
     gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
     ScrollSmoother.create({

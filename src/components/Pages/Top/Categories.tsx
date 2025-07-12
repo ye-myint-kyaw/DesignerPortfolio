@@ -13,6 +13,7 @@ const Categories = () => {
         slug={category.slug}
         key={category.slug}
         isReversed={(index + 1) % 2 === 0}
+        className={index == TopCategories.length-1 ? "mb-0!": ""}
       />)}
     </>
   )

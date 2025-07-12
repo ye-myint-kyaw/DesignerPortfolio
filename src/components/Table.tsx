@@ -17,9 +17,9 @@ const Table: React.FC<TableProps> = ({title, subTitle, tableCells}) => {
       </hgroup>
       <dl>
         {tableCells.map((cell) => (
-          <div key={cell.title} className='border-t-[1.25px] py-[30px] border-gray grid grid-cols-4 sm:grid-cols-8 gap-x-[20px] sm:gap-x-[3%]'>
-            <dt className='uppercase text-[14px] font-semibold col-start-1 col-end-3 '>{cell.title}</dt>
-            <dd className='col-start-4 -col-end-1'>
+          <div key={cell.title} className='border-t-[1.25px] py-[30px] border-gray grid grid-cols-8 sm:grid-cols-8 gap-x-[20px] sm:gap-x-[3%]'>
+            <dt className='uppercase text-[14px] font-semibold col-start-1 col-end-3 md:col-end-3 mb-5 md:mb-0 '>{cell.title}</dt>
+            <dd className='col-start-4 md:col-start-4 -col-end-1'>
               <ul className='flex flex-col md:flex-row justify-between gap-5'>
                 {cell.content.map(content => (
                   <li key={content} className='whitespace-pre-line'>

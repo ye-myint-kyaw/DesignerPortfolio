@@ -1,8 +1,7 @@
 import React from 'react'
 import BasicLayout from '../Layout/BasicLayout'
-import Link from 'next/link'
-import MobileNavigation from './MobileNavigation'
-import NavLinks from './NavLinks'
+import MobileNavigation from '@/components/header/MobileNavigation'
+import NavLinks from '@/components/header/NavLinks'
 
 
 const Header = () => {
