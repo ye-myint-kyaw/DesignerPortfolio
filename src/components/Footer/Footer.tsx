@@ -22,7 +22,7 @@ const Footer = () => {
       </BasicLayout>
 
       <BasicLayout asChild className="!mb-0">
-        <div className=" bottom-0 left-0 right-0 w-full py-4 flex justify-between items-center gap-5 bg-secondary">
+        <div className="fixed bottom-0 left-0 right-0 w-full py-4 flex justify-between items-center gap-5 bg-secondary">
           <p className="heading01">YOUR EXTRAORDINARY DESINGER WHO CAN FEEL YOUR BRAND’S EMOTIONS.</p>
           {/* scroll indigator */}
           <div className="w-[24px] h-[40px] rounded-full bg-secondary border-[2px] border-primary relative">

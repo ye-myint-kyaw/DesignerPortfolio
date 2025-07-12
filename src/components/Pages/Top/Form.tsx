@@ -14,6 +14,7 @@ import {
   FormMessage,
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
+import { sendMail } from '@/lib/util'
  
 const formSchema = z.object({
   companyName: z.string().min(1, {
@@ -35,12 +36,12 @@ const ContactForm = () => {
       companyName: "",
       projectIdea: "",
       pricingRange: "",
-      projectDetail: ""
+      projectDetail: "",
     },
   })
   
   function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values)
+    sendMail(values)
   }
 
 
@@ -55,6 +56,19 @@ const ContactForm = () => {
               <FormLabel className='inputLabel'>YOUR COMPANY NAME</FormLabel>
               <FormControl>
                 <Input placeholder="Apple..." className="input" {...field} />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name="email"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel className='inputLabel'>PROJECT IDEA</FormLabel>
+              <FormControl>
+                <Input placeholder="Ios 16 New UI......" className="input" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
