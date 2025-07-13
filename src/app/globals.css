@@ -40,6 +40,8 @@
   .inputLabel{
     @apply text-[14px] font-semibold uppercase md:ml-[24px] text-darkGray;
   }
+
+
 }
 
 @layer theme{

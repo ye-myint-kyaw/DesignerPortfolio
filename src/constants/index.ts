@@ -62,21 +62,51 @@ export const TopIntroTable: TableRow[] = [
   },
   {
     title: "SERVICES",
-    content: [`UX/UI Design
-      Graphic Design
+    content: [`UX/UI Design<br/>
+      Graphic Design<br/>
       Print Design`,
-      `Web Design
-      Brand Identity
+      `Web Design<br/>
+      Brand Identity<br/>
       Tshirt Design`,
-      `App Design
-      Social ads Design
+      `App Design<br/>
+      Social ads Design<br/>
       Poster Design`
     ]
   },
   {
     title: "KNOWLEDGE",
+    content: [`Photoshop<br/>
+      Illustrator<br/>
+      Indesign`,
+      `Figma<br/>
+      Webflow<br/>
+      XD`,
+      `Blender<br/>
+      Spline<br/>
+      Inkscape`
+    ]
+  },
+]
+
+export const WorkIntroTable: TableRow[] = [
+  {
+    title: "OVERVIEW",
+    content: [`Every design tells a story, and my passion lies in crafting artwork that each of mine captures moments and memories,
+emotions and feelings. I mainly focus on making pieces which afterward connecting each other to form into a one single
+artwork. Bold and Eye-catchy handmade typography, geomatric, sharpy and duotone illustrations, modern with absolute
+minimalistic compositions make my conceptual art blend together.`],
+  },
+  {
+    title: "CATEGORIES",
+    content: [`Illustration Art<br/>Caricature Art`,
+      `Manipulation<br/>Hand-drawn Typography`,
+      `Brand Poster<br/>Movie Poster`
+    ]
+  },
+  {
+    title: "KNOWLEDGE",
     content: [`Photoshop
-      Illustrator
+      Illustrator<br/>
       Indesign`,
       `Figma
       Webflow
@@ -122,5 +152,89 @@ professional 👏`,
   for the brand b4 we don’t even figure
   out what it is 💪`,
     author: "PAST PARTNER"
+  },
+]
+
+export const TagsList = [
+  "BRAND IDENTITY",
+  "TEE DESIGN",
+  "PACKAGING",
+  "SOCIAL MEDIA ADS",
+  "LOGO"
+]
+
+export const PosterList = [
+  {
+    img: "/img/img_category02.webp",
+    title: "Kevin Hart",
+    description: "Geometric illustration of Kevin Hart using only rectangles and duo tone. ",
+    category: "Personal",
+    link: "https://coosy.co.jp"
+  },
+  {
+    img: "/img/img_category02.webp",
+    title: "Kevin Hart",
+    description: "Geometric illustration of Kevin Hart using only rectangles and duo tone. ",
+    category: "Personal"
+  },
+  {
+    img: "/img/img_category02.webp",
+    title: "Kevin Hart",
+    description: "Geometric illustration of Kevin Hart using only rectangles and duo tone. ",
+    category: "Personal"
+  },
+  {
+    img: "/img/img_category02.webp",
+    title: "Kevin Hart",
+    description: "Geometric illustration of Kevin Hart using only rectangles and duo tone. ",
+    category: "Personal"
+  },
+  {
+    img: "/img/img_category02.webp",
+    title: "Kevin Hart",
+    description: "Geometric illustration of Kevin Hart using only rectangles and duo tone. ",
+    category: "Personal"
+  },
+  {
+    img: "/img/img_category02.webp",
+    title: "Kevin Hart",
+    description: "Geometric illustration of Kevin Hart using only rectangles and duo tone. ",
+    category: "Personal"
+  },
+  {
+    img: "/img/img_category02.webp",
+    title: "Kevin Hart",
+    description: "Geometric illustration of Kevin Hart using only rectangles and duo tone. ",
+    category: "Personal"
+  },
+  {
+    img: "/img/img_category02.webp",
+    title: "Kevin Hart",
+    description: "Geometric illustration of Kevin Hart using only rectangles and duo tone. ",
+    category: "Personal"
+  },
+  {
+    img: "/img/img_category02.webp",
+    title: "Kevin Hart",
+    description: "Geometric illustration of Kevin Hart using only rectangles and duo tone. ",
+    category: "Personal"
+  },
+  {
+    img: "/img/img_category02.webp",
+    title: "Kevin Hart",
+    description: "Geometric illustration of Kevin Hart using only rectangles and duo tone. ",
+    category: "Personal"
+  },
+  {
+    img: "/img/img_category02.webp",
+    title: "Kevin Hart",
+    description: "Geometric illustration of Kevin Hart using only rectangles and duo tone. ",
+    category: "Personal"
+  },
+  {
+    img: "/img/img_category02.webp",
+    title: "Kevin Hart",
+    description: "Geometric illustration of Kevin Hart using only rectangles and duo tone. ",
+    category: "Personal"
   },
 ]

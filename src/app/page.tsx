@@ -7,8 +7,7 @@ import Poster from "@/components/Pages/Top/Poster";
 import Testimonial from "@/components/Pages/Top/Testimonial";
 import Table from "@/components/Table";
 import TextGroup from "@/components/TextGroup";
-import { TopCategories, TopIntroTable, TopPosters } from "@/constants";
-import Image from "next/image";
+import { TopIntroTable } from "@/constants";
 import React from "react";
 
 const page = () => {
