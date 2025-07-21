@@ -5,6 +5,8 @@ import Footer from "@/components/Footer/Footer";
 import Header from "@/components/header/Header";
 import Smoothscroll from "@/lib/Smoothscroll";
 import FooterBanner from "@/components/Footer/FooterBanner";
+import { SanityLive } from "@/sanity/live";
+import ClickSpark from "@/components/ReactBit/ClickSpark/ClickSpart";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,12 +28,22 @@ export default function RootLayout({
         <Smoothscroll>
           <div id="smooth-wrapper">
             <div id="smooth-content">
-              {children}
+              <ClickSpark
+                sparkColor='#1b1b1b'
+                sparkSize={10}
+                sparkRadius={15}
+                sparkCount={8}
+                duration={400}
+              >
+                {children}
+              </ClickSpark>
               <Footer/>
             </div>
           </div>
         </Smoothscroll>
         <FooterBanner/>
+
+        <SanityLive/>
       </body>
     </html>
   );

@@ -9,7 +9,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div className='mt-[134px]'>
+    <div className='pt-[134px]'>
       <BasicLayout asChild>
         <div className='block mb-[112px]! '>
           <Link href={"/"} className='inline-block relative overflow-hidden w-[32px] h-auto aspect-square 
