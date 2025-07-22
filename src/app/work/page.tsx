@@ -31,7 +31,7 @@ Overall 135+ posters have made.`}
         author="Downlaod CV here"
         asLink
         slug='https://coosy.co.jp'
-        className=" min-h-screen"
+        className='min-h-screen'
       />
     </div>
   )

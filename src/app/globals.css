@@ -75,6 +75,10 @@
   .animatedContainer.is-act img, .animatedContainer.is-act .contents, .animatedContainer.is-act .animated {
     animation: mask-animation 3s cubic-bezier(.115,.405,.24,1) 0s forwards;
   }
+
+  .poster figcaption, .poster .description{
+    transition: all .8s cubic-bezier(.115,.405,.24,1);
+  }
 }
 
 @theme inline {
